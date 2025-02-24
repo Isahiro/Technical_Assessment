@@ -1,0 +1,8 @@
+.home-button {
+    margin: 24px;
+    display: flex;
+}
+
+.spacer {
+    flex: 1;
+}

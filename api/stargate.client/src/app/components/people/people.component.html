@@ -1,0 +1,23 @@
+<div>
+    <div>
+        <button *ngIf="!showInput" (click)="revealInput()">Add Person</button>
+        <div *ngIf="showInput">
+            <span>Name: </span>
+            <input type="text" [(ngModel)]="name">
+            <button (click)="savePerson()"> Confirm</button>
+            <button (click)="cancelInput()"> Cancel</button>
+        </div>
+        <div *ngIf="isError" class="error">{{error}}</div>
+    </div>
+
+    <div *ngIf="isProcessing" class="lds-ring"></div>
+
+    <div *ngFor="let person of people" class="person">
+        <span class="name"><a href="/details/{{person.name}}"> {{person.name}} </a></span>
+
+        <span class="mobile-newline">
+            <span *ngIf="person.currentDutyTitle" class="detail"> {{person.currentDutyTitle}} </span>
+            <span *ngIf="person.currentRank" class="detail"> {{person.currentRank}} </span>
+        </span>
+    </div>
+</div>

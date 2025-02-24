@@ -1,0 +1,36 @@
+button {
+    margin: 8px;
+    background-color: purple;
+    color: yellow;
+}
+
+.header {
+    font-size: 24px;
+    margin: 16px 8px;
+}
+
+.detail {
+    margin: 8px;
+}
+
+.error {
+    margin: 8px;
+    color: red;
+}
+
+@media only screen and (min-width: 600px)
+{
+    .detail {
+        flex: 1;
+    }
+
+    .row {
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 599px) {
+    .detail {
+        display: block;
+    }
+}

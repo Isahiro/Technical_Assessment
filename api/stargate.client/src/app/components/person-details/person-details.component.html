@@ -1,0 +1,53 @@
+<div>
+    <div class="header">
+        {{person.name}}
+    </div>
+
+    <div class="row">
+        <span *ngIf="person.currentDutyTitle" class="detail"> Title: {{person.currentDutyTitle}} </span>
+        <span *ngIf="person.currentRank" class="detail"> Rank: {{person.currentRank}} </span>
+    </div>
+
+    <div class="row">
+        <span *ngIf="person.careerStartDate" class="detail"> Start Date: {{person.careerStartDate | date: 'MM/dd/yyyy'}} </span>
+        <span *ngIf="person.careerEndDate" class="detail"> Final Day: {{person.careerEndDate | date: 'MM/dd/yyyy'}} </span>
+    </div>
+
+    <div>
+        <div class="header"> Assign Duty</div>
+        <div class="detail"> Title: 
+            <input type="text" [(ngModel)]="dutyTitle">
+        </div>
+        
+        <div class="detail"> Rank: 
+            <input type="text" [(ngModel)]="dutyRank">
+        </div>
+        
+        <div class="detail"> Start Date: 
+            <input type="date" [(ngModel)]="dutyStartDate">
+        </div>
+
+        <button (click)="createDuty()">Create Duty</button>
+
+        <div *ngIf="errors && errors.length > 0">
+            <div *ngFor="let error of errors" class="error">
+                {{error}}
+            </div>
+        </div>
+    </div>
+
+    <div *ngIf="duties">
+        <div class="header"> Duties:</div>
+        <div *ngFor="let duty of duties">
+            <div class="row">
+                <span *ngIf="person.currentDutyTitle" class="detail"> Title: {{duty.dutyTitle}} </span>
+                <span *ngIf="person.currentRank" class="detail"> Rank: {{duty.rank}} </span>
+            </div>
+            <div class="row">
+                <span *ngIf="person.careerStartDate" class="detail"> Start Date: {{duty.dutyStartDate| date: 'MM/dd/yyyy'}} </span>
+                <span *ngIf="person.careerEndDate" class="detail"> Final Day: {{duty.dutyEndDate | date: 'MM/dd/yyyy'}} </span>
+            </div>
+            <br />
+        </div>
+    </div>
+</div>

@@ -21,7 +21,7 @@ namespace Stargate.Server.Controllers
         {
             try
             {
-                var result = await _mediator.Send(new GetPersonByName()
+                var result = await _mediator.Send(new GetAstronautDutiesByName()
                 {
                     Name = name
                 });

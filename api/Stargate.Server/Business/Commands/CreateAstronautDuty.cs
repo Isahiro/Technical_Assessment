@@ -52,9 +52,9 @@ namespace Stargate.Server.Business.Commands
         public async Task<CreateAstronautDutyResult> Handle(CreateAstronautDuty request, CancellationToken cancellationToken)
         {
 
-            var person = await _context.People.FromSql($"SELECT * FROM [Person] WHERE \'{request.Name}\' = Name").FirstOrDefaultAsync();
+            var person = await _context.People.FromSql($"SELECT * FROM [Person] WHERE {request.Name} = Name").FirstOrDefaultAsync();
 
-            var astronautDetail = await _context.AstronautDetails.FromSql($"SELECT * FROM [AstronautDetail] WHERE \'{person.Id}\' = PersonId").FirstOrDefaultAsync();
+            var astronautDetail = await _context.AstronautDetails.FromSql($"SELECT * FROM [AstronautDetail] WHERE {person.Id} = PersonId").FirstOrDefaultAsync();
 
             if (astronautDetail == null)
             {
@@ -65,7 +65,7 @@ namespace Stargate.Server.Business.Commands
                 astronautDetail.CareerStartDate = request.DutyStartDate.Date;
                 if (request.DutyTitle == "RETIRED")
                 {
-                    astronautDetail.CareerEndDate = request.DutyStartDate.Date;
+                    astronautDetail.CareerEndDate = request.DutyStartDate.AddDays(-1).Date;
                 }
 
                 await _context.AstronautDetails.AddAsync(astronautDetail);
@@ -82,7 +82,7 @@ namespace Stargate.Server.Business.Commands
                 _context.AstronautDetails.Update(astronautDetail);
             }
 
-            var astronautDuty = await _context.AstronautDuties.FromSql($"SELECT * FROM [AstronautDuty] WHERE \'{person.Id}\' = PersonId Order By DutyStartDate Desc").FirstOrDefaultAsync();
+            var astronautDuty = await _context.AstronautDuties.FromSql($"SELECT * FROM [AstronautDuty] WHERE {person.Id} = PersonId Order By DutyStartDate Desc").FirstOrDefaultAsync();
 
             if (astronautDuty != null)
             {

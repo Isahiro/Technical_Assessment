@@ -141,3 +141,4 @@ C:\Users\shado\Downloads\tech_exercise\package\exercise1\api\Stargate.Server\obj
 C:\Users\shado\Downloads\tech_exercise\package\exercise1\api\Stargate.Server\obj\Debug\net8.0\Stargate.Server.pdb
 C:\Users\shado\Downloads\tech_exercise\package\exercise1\api\Stargate.Server\obj\Debug\net8.0\Stargate.Server.genruntimeconfig.cache
 C:\Users\shado\Downloads\tech_exercise\package\exercise1\api\Stargate.Server\obj\Debug\net8.0\ref\Stargate.Server.dll
+C:\Users\shado\Downloads\tech_exercise\package\exercise1\api\Stargate.Server\obj\Debug\net8.0\Stargate.Server.sourcelink.json

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Stargate.Server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a774fdd2d4e2ec95c2bbef495506aac7858dd4b9")]
 [assembly: System.Reflection.AssemblyProductAttribute("Stargate.Server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Stargate.Server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

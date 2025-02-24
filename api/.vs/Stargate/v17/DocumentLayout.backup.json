@@ -1,12 +1,54 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\shado\\Downloads\\tech_exercise\\package\\exercise1\\api\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DD98A231-D7C1-4DE0-B9CF-E540893BFA46}|Stargate.Server\\Stargate.Server.csproj|c:\\users\\shado\\downloads\\tech_exercise\\package\\exercise1\\api\\stargate.server\\business\\commands\\createastronautduty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD98A231-D7C1-4DE0-B9CF-E540893BFA46}|Stargate.Server\\Stargate.Server.csproj|solutionrelative:stargate.server\\business\\commands\\createastronautduty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD98A231-D7C1-4DE0-B9CF-E540893BFA46}|Stargate.Server\\Stargate.Server.csproj|c:\\users\\shado\\downloads\\tech_exercise\\package\\exercise1\\api\\stargate.server\\business\\queries\\getastronautdutiesbyname.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD98A231-D7C1-4DE0-B9CF-E540893BFA46}|Stargate.Server\\Stargate.Server.csproj|solutionrelative:stargate.server\\business\\queries\\getastronautdutiesbyname.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GetAstronautDutiesByName.cs",
+              "DocumentMoniker": "C:\\Users\\shado\\Downloads\\tech_exercise\\package\\exercise1\\api\\Stargate.Server\\Business\\Queries\\GetAstronautDutiesByName.cs",
+              "RelativeDocumentMoniker": "Stargate.Server\\Business\\Queries\\GetAstronautDutiesByName.cs",
+              "ToolTip": "C:\\Users\\shado\\Downloads\\tech_exercise\\package\\exercise1\\api\\Stargate.Server\\Business\\Queries\\GetAstronautDutiesByName.cs",
+              "RelativeToolTip": "Stargate.Server\\Business\\Queries\\GetAstronautDutiesByName.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAACkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T04:45:44.815Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CreateAstronautDuty.cs",
+              "DocumentMoniker": "C:\\Users\\shado\\Downloads\\tech_exercise\\package\\exercise1\\api\\Stargate.Server\\Business\\Commands\\CreateAstronautDuty.cs",
+              "RelativeDocumentMoniker": "Stargate.Server\\Business\\Commands\\CreateAstronautDuty.cs",
+              "ToolTip": "C:\\Users\\shado\\Downloads\\tech_exercise\\package\\exercise1\\api\\Stargate.Server\\Business\\Commands\\CreateAstronautDuty.cs",
+              "RelativeToolTip": "Stargate.Server\\Business\\Commands\\CreateAstronautDuty.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAAAFQAAAB4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T04:19:49.861Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
